@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloemlezing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bloemlezing.</h1>
+        <nav>
+            <a href="index.html">gedichten</a>
+            <a href="dichters.html">dichters</a>
+            <a href="form.html" class="selected">suggestie</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <article>
+            <h2>Suggesties welkom!</h2>
+            <p>Heb je zelf een gedicht geschreven? Vul dan het formulier hieronder in. Dan wordt het op de website
+                geplaatst!</p>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="label-field">
+                    <label for="inzender_naam">Naam:</label>
+                    <input type="text" name="inzender_naam" id="inzender_naam" placeholder="e.g. Jan Steen">
+
+
+                    <label for="e-mail">E-mailadres:</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e.g. jansteen@hotmail.com">
+
+                    <label for="dichter_naam">Naam dichter:</label>
+                    <input type="text" name="dichter_naam" id="dichter_naam" placeholder="e.g. Jan Steen">
+
+                    <label for="geboortedatum">Geboortedatum dichter:</label>
+                    <input type="date" name="geboortedatum" id="geboortedatum">
+
+                    <label>Geslacht:</label>
+                    <label for="man" class="radiolabel">
+                        <input type="radio" name="geslacht" id="man" value="man"> Man
+                    </label>
+                    <label for="vrouw" class="radiolabel">
+                        <input type="radio" name="geslacht" id="vrouw" value="vrouw"> Vrouw
+                    </label>
+                    <label for="intersekse" class="radiolabel">
+                        <input type="radio" name="geslacht" id=" intersekse" value="intersekse"> Intersekse
+                    </label>
+
+                    <label for="profielfoto">Profielfoto:</label>
+                    <input type="file" name="profielfoto" id="profielfoto">
+
+                    <label for="gedicht">Gedicht:</label>
+                    <textarea name="gedicht"></textarea>
+                </div>
+
+
+                <div class="buttons">
+                    <p><input type="reset" value="Reset"></p>
+                    <p><input type="submit" value="Verstuur"></p>
+                </div>
+            </form>
+
+        </article>
+    </main>
+</body>
+
+</html>
